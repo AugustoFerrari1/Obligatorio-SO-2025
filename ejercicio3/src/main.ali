@@ -1,0 +1,134 @@
+V "GNAT Lib v2020"
+M P W=b
+P SS ZX
+
+RN
+RV NO_DELAY
+RV NO_DIRECT_BOOLEAN_OPERATORS
+RV NO_EXCEPTIONS
+RV NO_FIXED_POINT
+RV NO_IO
+RV NO_RELATIVE_DELAY
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_DEFAULT_INITIALIZATION
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+
+U main%b		main.adb		91332858 NE OO SU
+W ada%s			ada.ads			ada.ali
+Z ada.calendar.delays%s	a-caldel.adb		a-caldel.ali
+W ada.integer_text_io%s	a-inteio.ads		a-inteio.ali
+W ada.numerics%s	a-numeri.ads		a-numeri.ali
+W ada.numerics.discrete_random%s
+Z ada.tags%s		a-tags.adb		a-tags.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+W system%s		system.ads		system.ali
+Z system.concat_3%s	s-conca3.adb		s-conca3.ali
+Z system.concat_5%s	s-conca5.adb		s-conca5.ali
+Z system.img_int%s	s-imgint.adb		s-imgint.ali
+Z system.random_numbers%s  s-rannum.adb		s-rannum.ali
+
+D ada.ads		20200819050642 76789da1 ada%s
+D a-calend.ads		20200819050641 474d9720 ada.calendar%s
+D a-caldel.ads		20200819050641 9f20b83d ada.calendar.delays%s
+D a-except.ads		20200819050642 a7106115 ada.exceptions%s
+D a-inteio.ads		20200819050642 f64b89a4 ada.integer_text_io%s
+D a-ioexce.ads		20200819050642 e4a01f64 ada.io_exceptions%s
+D a-numeri.ads		20200819050642 bb51c45a ada.numerics%s
+D a-nudira.ads		20200819050642 5984dff3 ada.numerics.discrete_random%s
+D a-nudira.adb		20200819050642 0bfd6ec4 ada.numerics.discrete_random%b
+D a-stream.ads		20200819050642 119b8fb3 ada.streams%s
+D a-tags.ads		20200819050643 edddc8f0 ada.tags%s
+D a-textio.ads		20200819050643 aef4d56d ada.text_io%s
+D a-tiinio.ads		20200819050643 390edddb ada.text_io.integer_io%s
+D a-unccon.ads		20200819050643 0e9b276f ada.unchecked_conversion%s
+D interfac.ads		20200819050644 5ab55268 interfaces%s
+D i-cstrea.ads		20200819050644 e53d8b8e interfaces.c_streams%s
+D main.adb		20250612233808 9008ab62 main%b
+D system.ads		20200819050647 085b6ffb system%s
+D s-conca3.ads		20200819050645 0b705ca5 system.concat_3%s
+D s-conca5.ads		20200819050645 875e432e system.concat_5%s
+D s-crtl.ads		20200819050645 0ebbdb71 system.crtl%s
+D s-exctab.ads		20200819050645 54135002 system.exception_table%s
+D s-ficobl.ads		20200819050645 078245e4 system.file_control_block%s
+D s-imgint.ads		20200819050645 02dbe0c2 system.img_int%s
+D s-imguns.ads		20200819050645 9ff43cf7 system.img_uns%s
+D s-parame.ads		20200819050646 4752c4cb system.parameters%s
+D s-rannum.ads		20200819050646 99ade2f2 system.random_numbers%s
+D s-rannum.adb		20200819050646 5f999925 system.random_numbers%b
+D s-ransee.ads		20200819050646 01a57b33 system.random_seed%s
+D s-secsta.ads		20200819050646 9b3ab94b system.secondary_stack%s
+D s-soflin.ads		20200819050646 a7318a92 system.soft_links%s
+D s-stache.ads		20200819050646 a37c21ec system.stack_checking%s
+D s-stalib.ads		20200819050646 6b7a13f2 system.standard_library%s
+D s-stoele.ads		20200819050646 2dc34a04 system.storage_elements%s
+D s-traent.ads		20200819050646 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20200819050646 5ecf7212 system.unsigned_types%s
+D s-valuns.ads		20200819050646 35067db9 system.val_uns%s
+D s-wchcon.ads		20200819050646 1b7d22d2 system.wch_con%s
+G a e
+G c Z b b [main standard 5 11 none]
+X 1 ada.ads
+16K9*Ada 20e8 17|1r6 1r23 2r6 2r31 3r6 7r31
+X 5 a-inteio.ads
+18K13*Integer_Text_IO[13|46] 17|2w10 2r35
+X 7 a-numeri.ads
+16K13*Numerics 32e17 17|3r10 7r35
+X 8 a-nudira.ads
+44k22*Discrete_Random 81e33 17|3w19 7r44
+50R9 Generator<27|63R9> 17|10r10[7]
+52V13 Random{integer} 17|109s36[7] 142s28[7]
+61U14 Reset<27|100p14> 17|117s4[7]
+X 9 a-nudira.adb
+53V16 Random[27|83]{integer} 28|393b13[17|7]
+65V16 Random[27|83]{integer} 28|393b13[17|7]
+X 12 a-textio.ads
+57K13*Text_IO 727e16 17|1w10 1r27
+465U14*Put 17|119s4
+508U14*Put_Line 17|67s10 78s10 91s16 110s16 141s13
+X 13 a-tiinio.ads
+59U14*Get 17|120s4[5|18]
+X 15 interfac.ads
+74M9*Unsigned_32
+77M9*Unsigned_64
+X 17 main.adb
+5U11*Main 5b11 152l5 152t9
+7K12 Random_Time[8|44] 8r8
+10r4 Gen{8|50R9[7]} 109r43 117r10 142r35
+14i4 Max_Cajas{integer} 19r31
+15i4 Max_Cola{integer} 22r34 42r19 63r18 123r73 137r21
+18I9 Persona_Id<integer> 22r47 25r50 36r24 61r31 72r34 101r17 123r32 130r32
+. 136r31
+19I9 Caja_Id<short_short_integer> 23r37 24r32 25r38 52r16 87r16 103r16
+22A9 Cola_Tipo(18I9)<integer> 27r11
+23A9 Estado_Cajas_Tipo(boolean)<19I9> 32r19
+24A9 Tiempos_Tipo(integer)<19I9> 33r20
+25A9 Personas_Caja_Tipo(18I9)<19I9> 34r25
+27a4 Cola{22A9} 65m10 75r16
+28i4 Inicio{integer} 75r21 76m10 76r37
+29i4 Fin{integer} 64m10 64r34 65r15
+30i4 Total{integer} 63r10 66m10 66r19 74r10 77m10 77r19 104r42 123r65 130r64
+. 137r13
+32a4 Estado_Cajas{23A9} 53r13 88r13 92m16 104r17 107m16
+33a4 Tiempos_Cajas{24A9} 89m13 89r33 90r16 109m16
+34a4 Personas_Atendidas{25A9} 91r59 93m16 108m16
+36i4 Siguiente_Persona{18I9} 123r11 124r19 125m7 125r28 130r11 136r10 138r25
+. 139m13 139r34
+37i4 Total_Personas{integer} 120m8 123r43 130r43 136r42
+40V13 Siguiente_Indice{integer} 40b13 40>30 47l8 47t24 64s17 76s20
+40i30 Indice{integer} 42r10 45r17
+50V13 Hay_Cajas_Ocupadas{boolean} 50b13 58l8 58t26 130s78
+52i11 C{19I9} 53r26
+61U14 Entrar_Cola 61b14 61>26 69l8 69t19 124s7 138s13
+61i26 Id{18I9} 65r23 67r53
+72U14 Salir_Cola 72b14 72<25 82l8 82t18 105s13
+72i25 Id{18I9} 75m10 78r53 80m10
+85U14 Revisar_Cajas 85b14 97l8 97t21 133s7
+87i11 C{19I9} 88r26 89r27 89r47 90r30 91r78 91r132 92r29 93r35
+100U14 Asignar_Personas 100b14 114l8 114t24 147s7
+101i7 Persona{18I9} 105m24 106r16 108r41 110r59
+103i11 C{19I9} 104r30 107r29 108r35 109r30 110r117
+X 27 s-rannum.ads
+75V13*Random{15|74M9} 28|221i21
+76V13*Random{15|77M9} 28|221i21
+
