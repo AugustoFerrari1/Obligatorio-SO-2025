@@ -1,0 +1,52 @@
+version: "3.9"
+
+services:
+  maquina1:
+    build: ./maquina
+    container_name: maquina1
+    volumes:
+      - maquina1_data:/home/users/documentos
+
+  maquina2:
+    build: ./maquina
+    container_name: maquina2
+    volumes:
+      - maquina2_data:/home/users/documentos
+
+  maquina3:
+    build: ./maquina
+    container_name: maquina3
+    volumes:
+      - maquina3_data:/home/users/documentos
+
+  backup:
+    build: ./backup
+    container_name: backup
+    volumes:
+      - maquina1_data:/mnt/maquina1
+      - maquina2_data:/mnt/maquina2
+      - maquina3_data:/mnt/maquina3
+      - backup_data:/home/backup
+    command: ["cron", "-f"]
+    depends_on:
+    - maquina1
+    - maquina2
+    - maquina3
+
+  explorer:
+    build: ./explorer
+    container_name: explorer
+    ports:
+      - "8080:8080"
+    volumes:
+      - backup_data:/home/backup
+      - alerts:/home/alertas_detectadas
+    depends_on:
+      - backup
+
+volumes:
+  maquina1_data:
+  maquina2_data:
+  maquina3_data:
+  backup_data:
+  alerts:
